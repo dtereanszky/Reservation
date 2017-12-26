@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Booking" max_length="40" name="x_183246_reservati_booking" type="collection">
+        <element label="Diner" max_length="4000" name="diner_id" reference="x_183246_reservati_diner" type="glide_list"/>
+        <element display="true" label="From" max_length="40" name="from" type="glide_date_time"/>
+        <element label="Guests" max_length="40" name="guests" type="integer"/>
+        <element label="Until" max_length="40" name="until" type="glide_date_time"/>
+    </element>
+</database>

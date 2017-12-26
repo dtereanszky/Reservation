@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="diner_id" label="Diner" language="en" table="x_183246_reservati_booking">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>diner_id</element>
+            <help/>
+            <hint/>
+            <label>Diner</label>
+            <language>en</language>
+            <name>x_183246_reservati_booking</name>
+            <plural>Diners</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-26 19:37:34</sys_created_on>
+            <sys_id>613dd555db1f030025b7771ebf961953</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Diner</sys_name>
+            <sys_package display_value="Reservation" source="x_183246_reservati">6c210515dbdb030025b7771ebf961959</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Reservation">6c210515dbdb030025b7771ebf961959</sys_scope>
+            <sys_update_name>sys_documentation_x_183246_reservati_booking_diner_id_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-26 19:37:46</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

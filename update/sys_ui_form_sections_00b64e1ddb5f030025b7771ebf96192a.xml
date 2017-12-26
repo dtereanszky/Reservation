@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_form_sections form_id="00b64e1ddb5f030025b7771ebf96192a" sys_domain="global" table="x_183246_reservati_diner" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-26 22:38:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c0b64e1ddb5f030025b7771ebf96192c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_183246_reservati_diner" name="x_183246_reservati_diner" sys_domain="global" view="Default view">00b64e1ddb5f030025b7771ebf96192a</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_183246_reservati_diner" sys_domain="global" view="Default view">d59549d5dbdb030025b7771ebf961972</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-26 22:38:47</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-26 22:38:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>84b68e1ddb5f030025b7771ebf961957</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_183246_reservati_diner" name="x_183246_reservati_diner" sys_domain="global" view="Default view">00b64e1ddb5f030025b7771ebf96192a</sys_ui_form>
+            <sys_ui_section caption="History" display_value="History" name="x_183246_reservati_diner" sys_domain="global" view="Default view">c0b64e1ddb5f030025b7771ebf961929</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-26 22:38:47</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_183246_reservati_diner</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-26 22:38:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>00b64e1ddb5f030025b7771ebf96192a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_183246_reservati_diner</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Reservation" source="x_183246_reservati">6c210515dbdb030025b7771ebf961959</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Reservation">6c210515dbdb030025b7771ebf961959</sys_scope>
+            <sys_update_name>sys_ui_form_sections_00b64e1ddb5f030025b7771ebf96192a</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-26 22:38:47</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Diner" max_length="40" name="x_183246_reservati_diner" type="collection">
+        <element function_definition="deactiveated_at === null" function_field="true" label="Active" max_length="40" name="active" read_only="true" type="boolean"/>
+        <element label="Deactivated at" max_length="40" name="deactivated_at" read_only="true" type="glide_date_time"/>
+        <element label="Email" max_length="50" name="email" type="string"/>
+        <element label="First name" mandatory="true" max_length="50" name="first_name" type="string"/>
+        <element display="true" function_definition="glidefunction:concat(first_name, ' ', last_name)" function_field="true" label="Full name" max_length="100" name="full_name" read_only="true" type="string"/>
+        <element label="Last name" mandatory="true" max_length="50" name="last_name" type="string"/>
+        <element label="Mobile" mandatory="true" max_length="20" name="mobile" type="phone_number_e164"/>
+        <element choice="1" label="Preferred culture" max_length="2" name="preferred_culture" type="string">
+            <choice>
+                <element label="de" sequence="0" value="de"/>
+                <element label="en" sequence="1" value="en"/>
+                <element label="hu" sequence="2" value="hu"/>
+                <element label="no" sequence="3" value="no"/>
+                <element label="sv" sequence="4" value="sv"/>
+            </choice>
+        </element>
+    </element>
+</database>
