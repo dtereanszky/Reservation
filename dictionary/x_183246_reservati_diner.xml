@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element label="Diner" max_length="40" name="x_183246_reservati_diner" type="collection">
-        <element function_definition="deactiveated_at === null" function_field="true" label="Active" max_length="40" name="active" read_only="true" type="boolean"/>
+        <element function_definition="current.deactiveated_at === null" function_field="true" label="Active" max_length="40" name="active" read_only="true" type="boolean"/>
         <element label="Deactivated at" max_length="40" name="deactivated_at" read_only="true" type="glide_date_time"/>
         <element label="Email" max_length="50" name="email" type="string"/>
         <element label="First name" mandatory="true" max_length="50" name="first_name" type="string"/>

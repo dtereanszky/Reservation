@@ -25,7 +25,7 @@
             <sys_mod_count>0</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_183246_reservati_diner" name="x_183246_reservati_diner" sys_domain="global" view="Default view">00b64e1ddb5f030025b7771ebf96192a</sys_ui_form>
-            <sys_ui_section caption="History" display_value="History" name="x_183246_reservati_diner" sys_domain="global" view="Default view">c0b64e1ddb5f030025b7771ebf961929</sys_ui_section>
+            <sys_ui_section caption="Previous Bookings" display_value="Previous Bookings" name="x_183246_reservati_diner" sys_domain="global" view="Default view">c0b64e1ddb5f030025b7771ebf961929</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2017-12-26 22:38:47</sys_updated_on>
         </sys_ui_form_section>

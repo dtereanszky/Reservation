@@ -54,15 +54,15 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-12-26 19:29:37</sys_created_on>
-        <sys_id>7cba55d1db1f030025b7771ebf961932</sys_id>
+        <sys_id>ce8cbd21db93030025b7771ebf961992</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Until</sys_name>
         <sys_package display_value="Reservation" source="x_183246_reservati">6c210515dbdb030025b7771ebf961959</sys_package>
         <sys_policy/>
         <sys_scope display_value="Reservation">6c210515dbdb030025b7771ebf961959</sys_scope>
         <sys_update_name>sys_dictionary_x_183246_reservati_booking_until</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-12-26 19:29:37</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2017-12-27 16:32:53</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

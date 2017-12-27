@@ -31,7 +31,7 @@
         <element>active</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <function_definition>deactiveated_at === null</function_definition>
+        <function_definition>current.deactiveated_at === null</function_definition>
         <function_field>true</function_field>
         <internal_type display_value="">boolean</internal_type>
         <mandatory>false</mandatory>
@@ -54,7 +54,7 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-12-26 19:39:41</sys_created_on>
-        <sys_id>1a9d1d55db1f030025b7771ebf9619cf</sys_id>
+        <sys_id>318cbd21db93030025b7771ebf961978</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>Active</sys_name>
         <sys_package display_value="Reservation" source="x_183246_reservati">6c210515dbdb030025b7771ebf961959</sys_package>
@@ -62,7 +62,7 @@
         <sys_scope display_value="Reservation">6c210515dbdb030025b7771ebf961959</sys_scope>
         <sys_update_name>sys_dictionary_x_183246_reservati_diner_active</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-12-26 19:56:48</sys_updated_on>
+        <sys_updated_on>2017-12-27 16:52:01</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

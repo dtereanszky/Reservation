@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_relationship">
+    <sys_relationship action="INSERT_OR_UPDATE">
+        <advanced>false</advanced>
+        <apply_to/>
+        <basic_apply_to>x_183246_reservati_booking</basic_apply_to>
+        <basic_query_from>x_183246_reservati_diner</basic_query_from>
+        <insert_callback/>
+        <name>Bookings of Diner</name>
+        <query_from/>
+        <query_with><![CDATA[(function refineQuery(current, parent) {
+	current.addQuery('diner_id.value', parent.sys_id);
+})(current, parent);]]></query_with>
+        <reference_field>diner_id</reference_field>
+        <related_list/>
+        <simple_reference>false</simple_reference>
+        <sys_class_name>sys_relationship</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-12-27 17:28:54</sys_created_on>
+        <sys_id>0ab80aa9db93030025b7771ebf961924</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Bookings of Diner</sys_name>
+        <sys_package display_value="Reservation" source="x_183246_reservati">6c210515dbdb030025b7771ebf961959</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Reservation">6c210515dbdb030025b7771ebf961959</sys_scope>
+        <sys_update_name>sys_relationship_0ab80aa9db93030025b7771ebf961924</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-12-27 22:23:10</sys_updated_on>
+    </sys_relationship>
+    <sys_translated_text action="delete_multiple" query="documentkey=0ab80aa9db93030025b7771ebf961924"/>
+</record_update>
