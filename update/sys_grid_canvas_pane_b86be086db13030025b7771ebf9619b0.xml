@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_grid_canvas_pane">
+    <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+        <grid_canvas display_value="PA Usage by Web API">7c6be086db13030025b7771ebf9619ac</grid_canvas>
+        <height>10</height>
+        <portal_widget display_value="Created 2016-01-22 01:17:26">eb64fbd29f811200ef4afa7dc67fcf69</portal_widget>
+        <posx>0</posx>
+        <posy>30</posy>
+        <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-12-28 23:55:19</sys_created_on>
+        <sys_id>b86be086db13030025b7771ebf9619b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>7c6be086db13030025b7771ebf9619ac</sys_name>
+        <sys_package display_value="Reservation" source="x_183246_reservati">6c210515dbdb030025b7771ebf961959</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Reservation">6c210515dbdb030025b7771ebf961959</sys_scope>
+        <sys_update_name>sys_grid_canvas_pane_b86be086db13030025b7771ebf9619b0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-12-28 23:55:19</sys_updated_on>
+        <width>12</width>
+    </sys_grid_canvas_pane>
+</record_update>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>GET</http_method>
+        <name>Diners</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+	var table = 'x_183246_reservati_diner';
+	var result_arr = [];
+	gr = new GlideRecord(table);
+	gr.query();
+	while (gr.next()) {
+		var result = {};
+		result.fullName = gr.full_name.toString();
+		result.firstName = gr.first_name.toString();
+		result.lastName = gr.last_name.toString();
+		result.email = gr.email.toString();
+		result.mobile = gr.mobile.toString();
+		result.preferredCulture = gr.preferred_culture.toString();
+		result.id = gr.sys_id.toString();
+		
+		result_arr.push(result);
+	}
+
+	return result_arr;
+	//return JSON.stringify(result_arr);	
+	return new global.JSON().encode(result_arr);
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_183246_reservati/resttest/diner</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/diner</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-12-28 23:51:39</sys_created_on>
+        <sys_id>dae86406db13030025b7771ebf961978</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_name>Diners</sys_name>
+        <sys_package display_value="Reservation" source="x_183246_reservati">6c210515dbdb030025b7771ebf961959</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Reservation">6c210515dbdb030025b7771ebf961959</sys_scope>
+        <sys_update_name>sys_ws_operation_dae86406db13030025b7771ebf961978</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-12-29 01:36:43</sys_updated_on>
+        <web_service_definition display_value="restTest">47b8e006db13030025b7771ebf961968</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>
