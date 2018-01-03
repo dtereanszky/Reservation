@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[angular.module('reservations', []);
+angular.module('reservations').controller('dinerController', function($scope, $http) {
+	var dinerUri = 'https://dev21798.service-now.com/api/x_183246_reservati/resttest/diner';
+	var bookingUri = 'https://dev21798.service-now.com/api/x_183246_reservati/resttest/booking?dinerId=';
+
+	$scope.selectedDiner = null;
+	$scope.diners = [];
+	$scope.getDiners = function() {
+		$scope.diners.length = 0;
+		ajaxGet(dinerUri, function(data) {
+			if(data) {
+				if(data.result) {
+					$scope.diners.length = 0;
+					data.result.forEach(function(elem) {
+						$scope.diners.push(elem);
+					});
+				}
+			}
+		});
+	};
+	
+	$scope.bookings = [];
+	$scope.getBookings = function() {
+		$scope.bookings.length = 0;
+		ajaxGet(bookingUri + $scope.selectedDiner.id, function(data) {
+			if(data) {
+				if(data.result) {
+					$scope.bookings.length = 0;
+					data.result.forEach(function(elem) {
+						$scope.bookings.push(elem);
+					});
+				}
+			}
+		});
+	};
+
+	var ajaxGet = function(url, success) {
+		$http.get(url)
+			.then(function mySuccess(response) { success(response.data); },
+				  function myError(response) { alert(response.statusText); } );
+	};
+});]]></client_script>
+        <description/>
+        <direct>true</direct>
+        <endpoint>x_183246_reservati_Booking management page.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" />
+
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+		  <a class="navbar-brand" href="#">Navbar</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+			<ul class="navbar-nav mr-auto">
+			  <li class="nav-item active">
+				<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Link</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link disabled" href="#">Disabled</a>
+			  </li>
+			  <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+				<div class="dropdown-menu" aria-labelledby="dropdown01">
+				  <a class="dropdown-item" href="#">Action</a>
+				  <a class="dropdown-item" href="#">Another action</a>
+				  <a class="dropdown-item" href="#">Something else here</a>
+				</div>
+			  </li>
+			</ul>
+		  </div>
+		</nav>
+
+		<main role="main" ng-app="reservations" ng-controller="dinerController">
+
+		  <!-- Main jumbotron for a primary marketing message or call to action -->
+		  <div class="jumbotron">
+			<div class="container">
+			  <h1 class="display-3">Reservations</h1>
+			  <p>Click the button below to get a list of diners.</p>
+			  <p><button ng-click="getDiners()" type="btn" class="btn btn-primary">Get diners from ServiceNow</button></p>
+			</div>
+		  </div>
+
+		  <div class="container">
+			<div class="row">
+			  <div ng-show="diners.length > 0" class="col-md-6">
+				<h2>Diners</h2>
+				<p><select placeholder="Pick a Diner..." ng-model="selectedDiner" ng-options="x.fullName for x in diners" ng-change="getBookings()"></select>
+				</p>
+			  </div>
+			  <div ng-show="bookings.length > 0" class="col-md-6" >
+				<h2>Bookings</h2>
+				<p><select ng-model="foo" ng-options="x.from + ' (' + x.guests + ')' for x in bookings" size="10"></select>
+				</p>
+			  </div>
+			</div>
+
+			<hr ng-show="diners.length > 0" />
+
+		  </div> <!-- /container -->
+
+		</main>
+
+		<footer class="container">
+		  <p>© 2017</p>
+		</footer>
+</j:jelly>]]></html>
+        <name>Booking management page</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-12-29 18:23:17</sys_created_on>
+        <sys_id>6fe8ec92db13030025b7771ebf961929</sys_id>
+        <sys_mod_count>70</sys_mod_count>
+        <sys_name>Booking management page</sys_name>
+        <sys_package display_value="Reservation" source="x_183246_reservati">6c210515dbdb030025b7771ebf961959</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Reservation">6c210515dbdb030025b7771ebf961959</sys_scope>
+        <sys_update_name>sys_ui_page_6fe8ec92db13030025b7771ebf961929</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-03 01:01:41</sys_updated_on>
+    </sys_ui_page>
+</record_update>
